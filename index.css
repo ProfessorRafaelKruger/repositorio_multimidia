@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #c45b2f; /* Vermelho terroso */
+  color: #fff;
+  padding: 10px 0;
+}
+
+.header-title h1 {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 2em;
+  color: #e7b32f; /* Dourado */
+}
+
+.header-nav {
+  background-color: #d8742c; /* Laranja enferrujado */
+}
+
+.header-nav nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+.header-nav nav ul li {
+  display: inline-block;
+  margin: 10px 15px;
+}
+
+.header-nav nav ul li a {
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.header-nav nav ul li a:hover {
+  background-color: #daa520; /* Dourado no hover */
+}
+
+/* Estilizando a seção de vídeos */
+#videos {
+  padding: 20px;
+  background-color: #dfb081;
+}
+
+#videos h2 {
+  font-size: 2rem;
+  color: #222;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.video-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.video-item iframe {
+  width: 100%;
+  max-width: 720px;
+  height: 400px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.video-item h3 {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.video-item p {
+  font-size: 1rem;
+  color: #444;
+  max-width: 720px;
+  text-align: justify;
+}
+
+/* Estilizando a seção de notícias */
+#noticias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #a3b18a;
+}
+
+#noticias h2 {
+  font-size: 2rem;
+  color: #222;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.noticia-item {
+  max-width: 800px;
+  background-color: #dce9c6;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.noticia-item h3 {
+  font-size: 1.5rem;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.noticia-item p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.noticia-item .btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.noticia-item .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos responsivos para dispositivos móveis */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  /* Organização dos links na vertical em telas menores */
+  .header-nav nav ul {
+    text-align: left;
+    padding: 0;
+  }
+
+  .header-nav nav ul li {
+    display: block; /* Deixa os links na vertical */
+    margin: 10px 0; /* Espaçamento entre os links */
+    text-align: center; /* Centraliza os links */
+  }
+
+  .header-nav nav ul li a {
+    font-size: 1.2em;
+    padding: 10px;
+    display: block; /* Faz os links ocuparem toda a linha */
+    background-color: #b7410e; /* Mantém o botão no vermelho terroso */
+    border-radius: 5px;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  article {
+    margin-bottom: 20px;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #videos iframe {
+    height: 250px;
+  }
+
+  .noticia-item {
+    padding: 15px;
+  }
+
+  .noticia-item h3 {
+    font-size: 1.3rem;
+  }
+}
